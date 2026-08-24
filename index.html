@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCC SMART AI</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: white;
+    }
+
+    .header {
+      background: #14213d;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .header p {
+      margin: 8px 0 0;
+      color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #172033;
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 12px;
+      background: #2563eb;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    #answer {
+      margin-top: 15px;
+      padding: 15px;
+      background: #0f172a;
+      border-radius: 12px;
+      display: none;
+      line-height: 1.6;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>🇮🇳 NCC SMART AI</h1>
+    <p>NCC कैडेट्स के लिए स्मार्ट लर्निंग ऐप</p>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>🤖 AI सहायता</h2>
+      <p>अपने NCC से जुड़े सवाल का जवाब पाने के लिए नीचे क्लिक करें।</p>
+      <button onclick="askAI()">NCC सवाल पूछें</button>
+
+      <div id="answer">
+        🇮🇳 NCC SMART AI में आपका स्वागत है!<br><br>
+        यहाँ आपको NCC, ड्रिल, कैंप, सामान्य ज्ञान और तैयारी से संबंधित
+        जानकारी प्राप्त करने में मदद मिलेगी।
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📚 NCC अध्ययन</h2>
+      <p>ड्रिल, मैप रीडिंग, सामान्य ज्ञान और NCC विषयों की तैयारी करें।</p>
+      <button onclick="showMessage()">अध्ययन शुरू करें</button>
+    </div>
+
+    <div class="card">
+      <h2>📝 क्विज़</h2>
+      <p>NCC से जुड़े प्रश्नों का अभ्यास करें।</p>
+      <button onclick="quiz()">क्विज़ शुरू करें</button>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    NCC SMART AI 🇮🇳<br>
+    कैडेट्स के लिए सीखना आसान बनाएं
+  </div>
+
+  <script>
+    function askAI() {
+      document.getElementById("answer").style.display = "block";
+    }
+
+    function showMessage() {
+      alert("📚 अध्ययन मॉड्यूल जल्द उपलब्ध होगा!");
+    }
+
+    function quiz() {
+      alert("📝 क्विज़ मॉड्यूल जल्द उपलब्ध होगा!");
+    }
+  </script>
+
+</body>
+</html>
